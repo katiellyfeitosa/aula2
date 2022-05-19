@@ -20,7 +20,6 @@ declarar diferentes variáveis.
 Ajude o professor com as seguintes questões:
 1. Verifique quais dessas variáveis declaradas pelo aluno estão corretas.
 2. Corrigir as incorrectas.
-   
 
     var 1nome string
     var sobrenome string 
