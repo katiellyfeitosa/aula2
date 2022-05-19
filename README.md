@@ -19,14 +19,15 @@ Programação I para fornecer-lhes o feedback correspondente. Um dos pontos do e
 declarar diferentes variáveis.
 Ajude o professor com as seguintes questões:
 1. Verifique quais dessas variáveis declaradas pelo aluno estão corretas.
-2. Corrigir as incorrectas./br
-    var 1nome string /br
-    var sobrenome string /br
-    var int idade /br
-    1sobrenome := 6 /br
-    var licenca_para_dirigir = true /br
-    var estatura da pessoa int /br
-    quantidadeDeFilhos := 2 /br
+2. Corrigir as incorrectas.
+    
+    var 1nome string 
+    var sobrenome string 
+    var int idade 
+    1sobrenome := 6 
+    var licenca_para_dirigir = true 
+    var estatura da pessoa int 
+    quantidadeDeFilhos := 2 
 
 ## Exercício 4 - Tipos de dados
 
@@ -35,8 +36,8 @@ tipos em Go mas teve várias dúvidas ao fazê-lo. A partir disso, ele nos deu s
 pediu a ajuda de um desenvolvedor experiente que pode:
 ● Revisar o código e realizar as devidas correções.    
     
-    var sobrenome string = "Silva" /br
-    var idade int = "25" /br
-    boolean := "false"; /br
-    var salario string = 4585.90 /br
-    var nome string = "Fellipe" /br
+    var sobrenome string = "Silva" 
+    var idade int = "25" 
+    boolean := "false"; 
+    var salario string = 4585.90 
+    var nome string = "Fellipe" 
