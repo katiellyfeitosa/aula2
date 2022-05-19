@@ -21,13 +21,13 @@ Ajude o professor com as seguintes questões:
 1. Verifique quais dessas variáveis declaradas pelo aluno estão corretas.
 2. Corrigir as incorrectas.
 
-    var 1nome string
-    var sobrenome string 
-    var int idade 
-    1sobrenome := 6 
-    var licenca_para_dirigir = true 
-    var estatura da pessoa int 
-    quantidadeDeFilhos := 2 
+    var 1nome string <br />
+    var sobrenome string <br />
+    var int idade <br />
+    1sobrenome := 6 <br />
+    var licenca_para_dirigir = true <br />
+    var estatura da pessoa int <br />
+    quantidadeDeFilhos := 2 <br />
     
 
 ## Exercício 4 - Tipos de dados
