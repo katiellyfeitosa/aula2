@@ -1,20 +1,20 @@
 package main
 
 import (
-"fmt"
-"strings"
+	"fmt"
+	"strings"
 )
 
 func main() {
 
-var palavra string = "hello"
+	var palavra string = "hello"
 
-fmt.Println("Quantidade de letras: ", len(palavra))
+	fmt.Println("Quantidade de letras: ", len(palavra))
 
-str := strings.Split(palavra,"")
+	str := strings.Split(palavra, "")
 
-for i := 0; i < len(str); i++ {
-	fmt.Println(str[i])
-}
+	for i := 0; i < len(str); i++ {
+		fmt.Println(str[i])
+	}
 
 }
