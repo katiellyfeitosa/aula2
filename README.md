@@ -1,4 +1,4 @@
-# Bootcamo Golang - GO Bases I - aula2
+# Bootcamp Golang - GO Bases I - aula2
 
 ## Exercício 1 - Imprimindo o nome na tela
 1. Crie uma aplicação que tenha uma variável “nome” e outra “idade”.
@@ -21,7 +21,7 @@ Ajude o professor com as seguintes questões:
 1. Verifique quais dessas variáveis declaradas pelo aluno estão corretas.
 2. Corrigir as incorrectas.
    
-   
+
     var 1nome string
     var sobrenome string 
     var int idade 
