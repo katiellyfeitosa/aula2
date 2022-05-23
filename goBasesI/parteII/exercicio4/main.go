@@ -15,7 +15,7 @@ func main() {
 		}
 	}
 
-	fmt.Println("Valor de contador: ", contador)
+	fmt.Println("Funcionarios com mais de 21 anos: ", contador)
 
 	employees["Frederico"] = 25
 

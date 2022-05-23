@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 func main() {
@@ -11,10 +10,8 @@ func main() {
 
 	fmt.Println("Quantidade de letras: ", len(palavra))
 
-	str := strings.Split(palavra, "")
-
-	for i := 0; i < len(str); i++ {
-		fmt.Println(str[i])
+	for _, i := range palavra {
+		fmt.Println(string(i))
 	}
 
 }
