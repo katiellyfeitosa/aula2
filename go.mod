@@ -1,3 +1,3 @@
-module github.com/katiellyfeitosa/aula2
+module github.com/katiellyfeitosa/bootcampGO
 
 go 1.18
