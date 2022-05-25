@@ -1,5 +1,4 @@
-ID 	NOME  PRECO  QUANTIDADE
-01, Candida, 20.0, 20;
-02, Desinfetante, 15.0, 6;
-03, Amaciante,	16.0, 50;
-04, Limpa pedra,	90.0, 5;
+ID, Quantidade, Preco
+3,8,6.99
+2,20,12.99
+1,10,9.99
