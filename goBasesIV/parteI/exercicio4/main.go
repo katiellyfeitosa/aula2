@@ -29,9 +29,15 @@ type funcionario struct {
 }
 
 func (f funcionario) calcSalario() (float64, error) {
-	if f.horasTrabalhas == 0 || f.horasTrabalhas < 80 {
-		return 0, errors.New("O trabalhador não pode ter trabalhado menos de 80 horas por mês")
+
+	if f.horasTrabalhas == 0 {
+		return 0, errors.New("o valor de horas trabalhadas nao pode ser 0")
 	}
+
+	if f.horasTrabalhas < 80 {
+		return 0, fmt.Errorf("O trabalhador %s não pode ter trabalhado menos de 80 horas por mês", f.Nome)
+	}
+
 	salario := float64(f.horasTrabalhas) * f.valorHora
 
 	salarioCalc := calcImposto(salario)
