@@ -1,7 +1,9 @@
-// - Deletar produtos: recebe um usuário, apaga os produtos do usuário. FALTA
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 type Usuario struct {
 	Nome      string
@@ -14,6 +16,12 @@ type Produto struct {
 	Nome       string
 	preco      float64
 	quantidade int
+}
+
+func check(e error) {
+	if e != nil {
+		panic(e)
+	}
 }
 
 func main() {
@@ -30,9 +38,13 @@ func main() {
 
 	fmt.Println("Usuario:", usuario1)
 
-	usuario1.adicionarProduto(produto1, 10)
-
+	err := usuario1.adicionarProduto(produto1, 10)
+	check(err)
 	fmt.Println("Usuario com um produto:", usuario1)
+
+	usuario1.deletarProdutos()
+	fmt.Println("Usuario após a exclusao dos seus produtos", usuario1)
+
 }
 
 func novoProduto(nome string, preco float64) *Produto {
@@ -42,10 +54,17 @@ func novoProduto(nome string, preco float64) *Produto {
 	}
 }
 
-func (u *Usuario) adicionarProduto(p *Produto, quantidade int) {
+func (u *Usuario) adicionarProduto(p *Produto, quantidade int) error {
+	if quantidade == 0 {
+		return errors.New("Quantidade de produto inválida")
+	}
+
 	p.quantidade = quantidade
 	u.Produtos = append(u.Produtos, *p)
+
+	return nil
 }
 
-func (u *Usuario) deletarProduto(p *Produto) {
+func (u *Usuario) deletarProdutos() {
+	u.Produtos = nil
 }
