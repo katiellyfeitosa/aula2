@@ -31,7 +31,7 @@ type funcionario struct {
 func (f funcionario) calcSalario() (float64, error) {
 
 	if f.horasTrabalhas == 0 {
-		return 0, errors.New("o valor de horas trabalhadas nao pode ser 0")
+		return 0, errors.New("o valor de horas trabalhadas não pode ser 0")
 	}
 
 	if f.horasTrabalhas < 80 {
