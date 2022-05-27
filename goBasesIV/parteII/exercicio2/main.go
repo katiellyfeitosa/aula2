@@ -51,6 +51,7 @@ func gravarArquivo(caminho string, c cliente) error {
 		return fmt.Errorf("Erro ao abrir o arquivo %s.", err)
 	}
 
+	fmt.Printf("Cliente %s gravado com sucesso!\n", c.nomeSobrenome)
 	return nil
 }
 
@@ -72,27 +73,31 @@ func (c cliente) verificaSeExiste(data string) bool {
 }
 
 func main() {
-	defer func() {
-		if r := recover(); r != nil {
-			fmt.Println("Erro:", r)
-		}
-	}()
 
 	cliente1 := cliente{
-		nomeSobrenome: "rebeca",
-		rg:            "138732832",
+		nomeSobrenome: "Kato",
+		rg:            "870126574",
 		telefone:      "11959535619",
 		endereco:      "Rua do me ajuda",
 	}
 
 	caminhoDoArquivo := "customers.txt"
 
-	data := lerArquivo(caminhoDoArquivo)
-	existe := cliente1.verificaSeExiste(data)
+	var existe bool
 
-	if existe == true {
-		fmt.Printf("Cliente já cadastrado")
-	} else {
-		gravarArquivo(caminhoDoArquivo, cliente1)
-	}
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Erro:", r)
+		}
+
+		if existe == true {
+			fmt.Printf("Cliente já cadastrado")
+		} else {
+			gravarArquivo(caminhoDoArquivo, cliente1)
+		}
+	}()
+
+	data := lerArquivo(caminhoDoArquivo)
+	existe = cliente1.verificaSeExiste(data)
+
 }
