@@ -75,7 +75,7 @@ func (c cliente) verificaSeExiste(data string) bool {
 func main() {
 
 	cliente1 := cliente{
-		nomeSobrenome: "Kato",
+		nomeSobrenome: "Kiko",
 		rg:            "870126574",
 		telefone:      "11959535619",
 		endereco:      "Rua do me ajuda",
@@ -99,5 +99,4 @@ func main() {
 
 	data := lerArquivo(caminhoDoArquivo)
 	existe = cliente1.verificaSeExiste(data)
-
 }
