@@ -47,6 +47,7 @@ func (f funcionario) calcSalario() (float64, error) {
 func calcImposto(salario float64) float64 {
 	if salario >= 20000 {
 		salario -= salario * 0.10
+		fmt.Printf("Imposto aplicado")
 	}
 	return salario
 }

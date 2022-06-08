@@ -1,0 +1,36 @@
+{
+    "users": [
+     {
+         "id": 2783,
+         "nome": "Kati", 
+         "sobrenome": "Rezende", 
+         "email": "kati@teste.com",
+         "idade": "23",
+         "altura": 1.55,
+         "ativo": true,
+         "dataDeCriacao": "28/05/2022"
+     },
+     {
+         "id": 2784,
+         "nome": "fernanda", 
+         "sobrenome": "de Deus", 
+         "email": "fefei@teste.com",
+         "idade": "23",
+         "altura": 1.55,
+         "ativo": true,
+         "dataDeCriacao": "28/05/2022"
+     },
+     {
+         "id": 2785,
+         "nome": "Albertinho", 
+         "sobrenome": "Socorro", 
+         "email": "albeetinhoi@teste.com",
+         "idade": "23",
+         "altura": 1.55,
+         "ativo": true,
+         "dataDeCriacao": "28/05/2022"
+     }
+ 
+    ] 
+ }
+ 
